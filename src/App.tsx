@@ -341,7 +341,7 @@ function HeroSection() {
           <span className="block text-black text-xs md:text-sm font-semibold mb-1 md:mb-2">
             Trusted Dentist in West New York
           </span>
-          <h1 className="text-black text-[clamp(3rem,11vw,11rem)] font-bold leading-[0.79] tracking-tight">
+          <h1 className="text-black text-[clamp(2.75rem,10vw,9.5rem)] font-bold leading-[0.9] tracking-tight pb-[0.06em]">
             Dental
             <br />
             Care
@@ -428,7 +428,7 @@ function SmileGallerySection() {
           className="rounded-xl md:rounded-2xl overflow-hidden relative min-h-[160px] md:min-h-0"
           style={reveal.getAnimStyle(2)}
         >
-          <h2 className="absolute top-4 left-5 md:top-6 md:left-7 text-white md:text-black text-[clamp(3rem,7vw,6rem)] font-bold leading-[0.9] z-10">
+          <h2 className="absolute top-4 left-5 md:top-6 md:left-7 text-white md:text-black text-[clamp(2.75rem,6.5vw,5.5rem)] font-bold leading-[0.98] z-10">
             Smile
             <br />
             makeover
@@ -496,7 +496,7 @@ function ImplantDentistrySection() {
             className="rounded-xl md:rounded-2xl bg-stone-50 p-5 md:p-7 flex flex-col justify-between flex-[1.2] min-h-[180px] md:min-h-0"
             style={reveal.getAnimStyle(0)}
           >
-            <h2 className="text-[clamp(3rem,7vw,6.5rem)] font-bold leading-[0.95] text-black">
+            <h2 className="text-[clamp(2.75rem,6.5vw,6rem)] font-bold leading-[1.02] text-black">
               Implant
               <br />
               Dentistry
