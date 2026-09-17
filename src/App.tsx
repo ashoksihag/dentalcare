@@ -331,21 +331,23 @@ function HeroSection() {
         className="w-full flex-1 min-h-0 rounded-xl md:rounded-2xl overflow-hidden relative"
         style={reveal.getAnimStyle(3)}
       >
-        <div className="absolute top-4 left-4 md:top-7 md:left-7 text-black text-xs md:text-sm font-semibold leading-4 md:leading-5 max-w-[200px] md:max-w-[300px] z-10">
-          We wish to provide professional dental services
-          <br />
-          that match the current technologies
-        </div>
-
-        <div className="absolute bottom-5 left-3 md:bottom-8 md:left-4 z-10">
-          <span className="block text-black text-xs md:text-sm font-semibold mb-1 md:mb-2">
-            Trusted Dentist in West New York
-          </span>
-          <h1 className="text-black text-[clamp(2.75rem,10vw,9.5rem)] font-bold leading-[0.9] tracking-tight pb-[0.06em]">
-            Dental
+        <div className="absolute inset-0 z-10 flex flex-col px-3 md:px-4 pt-4 md:pt-7 pb-5 md:pb-8">
+          <p className="text-black text-xs md:text-sm font-semibold leading-4 md:leading-5 max-w-[200px] md:max-w-[300px] md:ml-3">
+            We wish to provide professional dental services
             <br />
-            Care
-          </h1>
+            that match the current technologies
+          </p>
+
+          <div className="mt-auto min-h-0">
+            <span className="block text-black text-xs md:text-sm font-semibold mb-1 md:mb-2">
+              Trusted Dentist in West New York
+            </span>
+            <h1 className="text-black text-[min(10vw,17vh,9.5rem)] font-bold leading-[0.9] tracking-tight pb-[0.06em]">
+              Dental
+              <br />
+              Care
+            </h1>
+          </div>
         </div>
 
         <div className="absolute bottom-6 right-4 md:bottom-10 md:right-8 text-white text-xs md:text-sm font-semibold z-10">
