@@ -107,7 +107,6 @@ A single large background image is shared across multiple cards. Each card rende
 - **Splash speed**: change the `20` ms interval (steps × interval = total duration) in `SplashScreen`
 
 ## Notes
-## Notes
 
 - The page intentionally has no routing, forms, or external state — it's a pure presentation landing page
 - Nav links and CTA buttons are non-functional placeholders (visual only)
@@ -141,6 +140,3 @@ npm approve-scripts esbuild
 npm rebuild esbuild
 ```
 
-
-- The page intentionally has no routing, forms, or external state — it's a pure presentation landing page
-- Nav links and CTA buttons are non-functional placeholders (visual only)
