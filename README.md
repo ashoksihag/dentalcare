@@ -133,7 +133,6 @@ The repo deploys automatically via GitHub Actions (`.github/workflows/deploy.yml
 - Requires the repo to be **public** (GitHub Pages is free only for public repos on free accounts)
 
 ## Troubleshooting
-## Troubleshooting
 
 **`The token '&&' is not a valid statement separator in this version`**
 Windows PowerShell 5.1 doesn't support `&&` (that's PowerShell 7+/cmd/bash syntax). Run the commands separately or join them with `;`:
