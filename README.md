@@ -111,6 +111,28 @@ A single large background image is shared across multiple cards. Each card rende
 - The page intentionally has no routing, forms, or external state — it's a pure presentation landing page
 - Nav links and CTA buttons are non-functional placeholders (visual only)
 
+## Hosting on GitHub Pages
+
+The repo deploys automatically via GitHub Actions (`.github/workflows/deploy.yml`).
+
+**Live URL:** https://ashoksihag.github.io/dentalcare/
+
+### One-time setup (required)
+
+1. Open the repo on GitHub: https://github.com/ashoksihag/dentalcare
+2. Go to **Settings → Pages** (under "Code and automation")
+3. Under **Build and deployment → Source**, select **GitHub Actions**
+4. Re-run the workflow if needed: **Actions → "Deploy to GitHub Pages" → Run workflow**
+
+### How it works
+
+- Every push to `main` triggers the workflow: install (`npm ci`) → build (`npm run build`) → publish `dist/` to Pages
+- The site URL is `https://<user>.github.io/<repo>/`, so Vite must prefix asset URLs with `/dentalcare/`. This is handled automatically in `vite.config.ts`:
+  - On GitHub Actions, `GITHUB_REPOSITORY` is always set, so `base` becomes `/<repo>/` (or `/` for `<user>.github.io` user-site repos)
+  - Locally, no env var is present, so `base` is `/` — normal dev/preview behavior
+- Requires the repo to be **public** (GitHub Pages is free only for public repos on free accounts)
+
+## Troubleshooting
 ## Troubleshooting
 
 **`The token '&&' is not a valid statement separator in this version`**
